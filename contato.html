@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">    
+    <title>Contato</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>        
+       <div class="caixaHeader">
+        <h1><img src="img/logo.png" alt="Logo da James Barber's"></h1>
+            <nav>
+                <ul >
+                    <li> <a href="index.html">Home</a></li>
+                    <li> <a href="produtos.html">Produtos</a></li>
+                    <li> <a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>        
+    </header>
+<main>
+    
+    <section class="formulario-contato">
+        
+        <form action="" >
+            <label for="nomecompleto">Nome Completo</label>
+            <input type="text" id="nomecompleto" class="input-padrao" required placeholder="Informe seu nome">
+        
+            <label for="email">E-mail</label>
+            <input type="email" id="email" class="input-padrao" required placeholder="exemplo@gmail.com">
+            
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+        
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem"  cols="70" rows="10" class="input-padrao" required placeholder="Digite aqui sua mensagem"></textarea>
+            
+            <fieldset>            
+                <legend>Como prefere o nosso contato?</legend>
+                <label for="radio-email"> <input type="radio" name="contato" value="email" id="radio-email"> E-mail</label>
+                
+
+                <label for="radio-telefone"> <input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+                
+
+                <label for="radio-whatsapp"> <input type="radio" name="contato" value="Whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+                
+            </fieldset>
+
+            <fieldset>
+                <legend>Qual horário prefere ser atendido(a)?</legend>
+                <select name="" id="">
+                    <option value="">Manhã</option>
+                    <option value="">Tarde</option>
+                    <option value="">Noite</option>
+                </select>
+            </fieldset>
+
+            
+            <label  class="checkbox" for="novidades"> <input type="checkbox" value="novidades" id="novidades" checked>Gostaria de receber nossas novidades por e-mail?</label>
+            
+
+            <input class="enviar" type="submit" value="Enviar formulário">
+        </form>
+    
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Dia</th>
+                <th>Horário</th>
+            </tr>
+        </thead>
+        <tbody>            
+            <tr>
+                <td>Segunda-Feira</td>
+                <td>8h ~ 20h</td>
+            </tr>
+            <tr>
+                <td>Quarta-Feira</td>
+                <td>8h ~ 20h</td>
+            </tr>
+            <tr>
+                <td>Sexta-Feira</td>
+                <td>8h ~ 20h</td>
+            </tr>        
+         </tbody>
+    </table>
+</section>
+
+</main>
+    <footer>
+        <img src="img/logo-branco.png" alt="Logo da James Barber's">
+        <p class="copyright"> &copy; Copyright James Barber's - 2022</p>
+    </footer>
+</body>
+</html>

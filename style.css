@@ -1,0 +1,285 @@
+body{
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+header{
+    background: #BBBBBB;
+    padding: 20px 0;
+}
+
+.caixaHeader{
+    position: relative; /*Estamos trazendo a caixa (DIV) para um 1º plano trazendo p frente (convertendo de static p relative). 
+                        Assim daremos um ponto absoluto dos elementos (lista) dentro dessa caixa. Para que isso ocorra a caixa precisa
+                        estar para frente em 1º plano.
+                        Lembrando que os elementos da lista já estão no 1º plano (position absolute), somente precisamos trazer a caixa tbm*/
+
+    width: 940px; /* Margem (+ou-) posição padrão que usa na web pois considera-se uma 
+                    resolução de tela de 1260px de largura,
+                    para que 940 de uma margem base de centralização. */
+    margin: 0 auto; /*espaçamento externo sejam 0 (cima e baixo) e auto (direita e esquerda)*/
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+    
+}
+
+nav a:hover{
+    color: #C78C19;
+}
+
+.produtos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0; /*50px (cima e baixo) e 0 (laterais)*/
+    
+}
+.produtos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%; /*Será considerado como tamanho total (100%) no box-sizing*/
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px; /*Cosiderando medida interna apartir do widht definido acima. Ou seja, 30px(cima e baixo) e 20px(laterais) do width de 30% informado acima*/
+    box-sizing: border-box; /* passa a considerar o tamanho de 30% como tamanho total e os 20px de padding mencionado acima será considerado a partir do width de 30% informado acima**/
+    border: 2px solid #000000; /*comando simplificado da estruturas de bordas mencionadas abaixo*/   
+                                    /* border-color: #000000 ; define a cor da brodar
+                                    border-width: 2px; define o tamanho da brodar
+                                    border-style: solid; define o estilo da brodar
+                                    */
+    border-radius: 10px;
+}
+
+.produtos li:hover{ /*hover = quando o mouse estiver por cima */
+    border-color: #C78C19;
+}
+.produtos li:active{ /*Enquanto pressionarmos mudará para a cor especificada*/
+    border-color: #088c;
+}
+
+.produtos li:hover h2{
+    font-size: 34px; /*aumentar o tamanho do elemento enquanto estivermos passando sobre ele*/ 
+}
+
+
+.produtos h2{
+    font-size: 30px; /*Tamanho*/
+    font-weight: bold; /*Negritar o texto*/
+}
+
+.produto-descricao{
+    font-size: 18px;
+    
+}
+
+.produto-preco{
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0 0; /*Espaçamento de 10px (cima e baixo) e 0px (laterais)*/
+
+}
+
+footer{
+    text-align: center;
+    background: url("img/bg.jpg"); /*Inserindo uma imagem no footer e preenchendo seu espaço com ela*/
+    padding: 40px 0;
+}
+
+.copyright{
+    color: #ffffff;
+    font-size: 13px;
+    margin-top: 20px;
+
+}
+
+form{
+    margin: 40px 0;
+}
+
+form label, form legend { /* Aderindo as mesmas estilizações para form parágrafo*/
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padrao{  /* Aderindo as mesmas estilizações para form textarea*/
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background: rgba(56, 38, 16, 0.5);
+    transform: scale(1.2);
+}
+
+table{
+    margin: 20px 0 40px;
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+
+/*CSS da página inicial*/
+.banner{
+    width: 100%;
+}
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+}
+
+.principal{
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.principal p{
+    margin: 0 0 1em;
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.utensilios {   
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+
+.mapa{
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE,#888888);
+}
+
+.mapa-conteudo{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+.beneficios{
+    padding: 3em 0;
+    background: #888888;
+}
+
+
+.conteudo-beneficios{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-beneficios{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.itens{
+    line-height: 1.5;
+}
+
+.itens:first-child{
+    font-weight: bold;
+}
+
+.itens:before{
+    content: "✂" ;
+}
+
+.imagem-beneficios{
+    width: 60%;
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 10px 10px 10px #000000; /*sombra esmaecido nas bordas*/
+}
+
+.imagem-beneficios:hover{
+    opacity: 0.3;
+   
+}
+
+
+.video{
+    width: 560px;
+    margin: 2em auto;
+}
+
+@media screen and (max-widht: 480px) {
+    .caixaHeader, .principal, .conteudo-beneficios, .mapa-conteudo, .video{
+        width: auto;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+    }
+}
+
+/*CSS da página contato*/
+
+.formulario-contato{
+    padding: 1em 0;
+    background: #FEFEFE;
+    width: 1200px;
+    margin: 0 auto;
+}
+
